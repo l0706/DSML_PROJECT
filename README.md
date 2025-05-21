@@ -4,3 +4,7 @@
 Group 4
 Members: Louis, Malak, Eero, and Lena
 
+To-do:
+- Clean up data (e.g. filter for rows with missing values )
+- Add ´traffic_volume´ as a feature
+- Add weather data
