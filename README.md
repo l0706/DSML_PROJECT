@@ -19,14 +19,12 @@ Members: Louis, Malak, Eero, and Lena
 ### Data Cleaning
 
 - [x] Remove rows with `trip_miles == 0` or `trip_seconds == 0`
-- [ ] Drop rows with missing or corrupt `trip_start_timestamp`
+- [X] Ensure `trip_start_timestamp` is in datetime format (+ handle rows with missing or corrupt values)
+- [X] Extract `hour` and `day_of_week` from timestamps
 - [ ] Handle missing values in `fare`, `trip_total`, or location fields
-- [ ] Ensure datetime columns are in proper format
-- [ ] Extract `hour` and `day_of_week` from timestamps
+- [ ] Other filtering tasks?
 
 ### Feature Engineering
 
 - [x] Add `traffic_volume` as a new feature (`trip_seconds / trip_miles`)
-- [ ] Extract time-based features (hour, weekday)
-- [ ] Include pickup and dropoff community areas as features
 - [ ] Add external weather data (e.g., via Meteostat API)
