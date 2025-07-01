@@ -15,16 +15,8 @@ Members: Louis, Malak, Eero, and Lena
 ---
 
 ## TODOs
-
-### Data Cleaning
-
-- [x] Remove rows with `trip_miles == 0` or `trip_seconds == 0`
-- [X] Ensure `trip_start_timestamp` is in datetime format (+ handle rows with missing or corrupt values)
-- [X] Extract `hour` and `day_of_week` from timestamps
-- [ ] Handle missing values in `fare`, `trip_total`, or location fields
-- [ ] Other filtering tasks?
-
-### Feature Engineering
-
-- [x] Add `traffic_volume` as a new feature (`trip_seconds / trip_miles`)
-- [ ] Add external weather data (e.g., via Meteostat API)
+- [] Add socio-economical features
+- [] Clean that
+- [] Finish exploration
+- [] Finalize descriptive analysis 
+- [] Build the 2nd model
