@@ -35,52 +35,73 @@ This section reflects the original project plan and tasks.
 * \[X] Build the 2nd model
 
 * \[ \] Add socio-economical features (This was an ambitious goal that we ultimately did not pursue due to time constraints)
-
-* \[ \] Clean that (Same as above)
+Perfect — here’s the improved and polished version of the **Prerequisites** section (and I’ve included the extra line under “Repository Structure” too).
+This version sounds more natural and professional for an academic or portfolio README, clearly indicating that the environment was provided by the course instructors but still listing what’s needed for anyone reproducing the project.
 
 ### 📦 Repository Structure
 
-This repository contains all the necessary files to understand and reproduce our work:
+This repository contains all essential files required to understand, reproduce, and evaluate our work:
 
-* `Final_Submission_Notebook.ipynb`: The primary Jupyter notebook detailing every step of the CRISP-DM process, from data loading to model evaluation.
+* **`Final_Submission_Notebook.ipynb`** — The main Jupyter notebook documenting every step of the **CRISP-DM** process, from data loading to model evaluation.
+  *(Includes earlier Milestone Submission Notebooks for reference.)*
 
-* `Final_Presentation_Slides.pdf`: A slide deck summarizing our methodology, findings, and results.
+* **`Final_Presentation_Slides.pdf`** — A concise slide deck summarizing our methodology, findings, and results.
+  *(Located in the `PPT/` directory.)*
 
-* `project_reflection.pdf`: A brief document reflecting on the team's process and key learnings.
+* **`project_reflection.pdf`** — A short reflective document outlining the team’s process, challenges, and key learnings.
+
+* **Additional files:**
+
+  * The source `.csv` dataset used for model training and evaluation
+  * The course’s team assignment sheet
+  * An additional 3D plot and the corresponding Python script that generated it
+
+> All files and results are organized to ensure full reproducibility and transparency of our analytical workflow.
 
 ### ⚙️ Methodology & Models
 
-Our analysis followed the CRISP-DM framework, with a specific focus on:
+Our analysis followed the **CRISP-DM** framework, focusing on **Business Understanding**, **Data Understanding**, **Data Preparation**, **Modeling**, and **Evaluation**.
 
-#### **Data Understanding and Preparation**
+#### **Data Understanding & Preparation**
 
-We began with a raw dataset of ride-hailing trips. Key steps in this phase included:
+We began with a raw dataset of ride-hailing trips in Chicago.
+Key steps in this phase included:
 
-* Descriptive statistics and data visualization to identify trends and outliers.
+* Performing descriptive statistics and exploratory data visualizations to identify patterns, trends, and outliers.
+* Conducting geospatial analysis with `geopandas` and `contextily` to visualize pickup hotspots across Chicago.
+* Handling missing values, filtering out implausible trip durations, and standardizing relevant features for modeling.
 
-* Geospatial analysis using `geopandas` to visualize pickup hotspots in Chicago.
+#### **Modeling & Evaluation**
 
-* Handling missing data and removing trips with implausible values.
+We implemented and compared two predictive models to estimate **trip duration**:
 
-#### **Modeling and Evaluation**
+1. **Model 1:** *Multiple Polynomial Linear Regression* — chosen for its interpretability and ability to capture non-linear relationships through polynomial features.
+2. **Model 2:** *Random Forest Regressor* — selected to explore a more complex, ensemble-based, and non-linear approach for potentially higher predictive performance.
 
-We developed and evaluated two predictive models to forecast trip duration:
-
-1.  **Model 1:** A `[Linear Regression, Random Forest, etc.]` model, chosen for its `[simplicity, interpretability, etc.]`.
-
-2.  **Model 2:** A `[Gradient Boosting, etc.]` model, selected to explore a more complex, non-linear approach.
-
-We evaluated these models using metrics such as `[Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R-squared]`.
+We evaluated both models using common regression metrics:
+**Mean Absolute Error (MAE)**, **Root Mean Squared Error (RMSE)**, and **R² (Coefficient of Determination)**.
 
 ### 📋 Prerequisites
 
-To run the notebook and reproduce the analysis, you will need the following Python libraries. We worked within an Anaconda environment named `DSML_env` which you can create and activate. You can install the necessary packages using `pip` (… actually, idk):
+This project was developed in a **virtual environment provided by the course instructors**.
+If you wish to reproduce the analysis independently, ensure that you have **Python 3.9+** and the following libraries installed.
 
-```
+You can install all required packages using `pip`:
 
+```bash
+# Install required packages
 pip install pandas scikit-learn numpy matplotlib seaborn geopandas contextily jupyter
-
 ```
+
+Alternatively, you may create your own virtual environment (e.g., with **Anaconda**) and install the packages there:
+
+```bash
+conda create -n DSML_env python=3.10
+conda activate DSML_env
+pip install pandas scikit-learn numpy matplotlib seaborn geopandas contextily jupyter
+```
+
+> Note: Depending on your system setup, you may need to install additional dependencies for `geopandas` (e.g., `fiona`, `gdal`, or `shapely`).
 
 ### 👥 Team Members
 
