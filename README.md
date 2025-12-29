@@ -2,7 +2,7 @@
 
 ### 🧠 An Analysis for *Introduction to Data Science and Machine Learning* (Summer Semester 2025)
 
-This project, developed as part of the *Introduction to Data Science and Machine Learning* course, focuses on building and evaluating predictive models for ride-hailing trip durations in Chicago.
+This project, was developed as part of this this course, focusing on building and evaluating predictive models for ride-hailing trip durations in Chicago.
 Using real-world mobility data, our team explored the factors influencing trip time and demonstrated a complete data science workflow — from data understanding and preparation to modeling and evaluation.
 
 ---
@@ -40,7 +40,7 @@ This section reflects our original project timeline and task progression.
 
 ### 📦 Repository Structure
 
-This repository contains all essential files required to understand, reproduce, and evaluate our work:
+This repository contains, mostly for our own comfort, all essential files required to understand, reproduce, and evaluate our work:
 
 * **`Final_Submission_Notebook.ipynb`** — The main Jupyter notebook documenting every step of the **CRISP-DM** process, from data loading to model evaluation.
   *(Includes earlier milestone submission notebooks for reference.)*
@@ -62,7 +62,7 @@ This repository contains all essential files required to understand, reproduce, 
 
 ### ⚙️ Methodology & Models
 
-Our analysis followed the **CRISP-DM** framework, focusing on the stages of **Business Understanding**, **Data Understanding**, **Data Preparation**, **Modeling**, and **Evaluation**.
+Our analysis followed the **CRISP-DM** framework, as required, focusing on the stages of **Business Understanding**, **Data Understanding**, **Data Preparation**, **Modeling**, and **Evaluation**.
 
 #### 🧩 Data Understanding & Preparation
 
